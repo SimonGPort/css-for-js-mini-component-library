@@ -11,7 +11,6 @@ box-shadow: inset 0px 2px 4px rgba(128, 128, 128, 0.35);
 background: rgba(128, 128, 128, 0.15);
 
 
-
 border-radius: ${props =>{ 
   if(props.size==="large"){
     return '8px'
@@ -33,7 +32,7 @@ height:${props =>{
 
 const Progress=styled.div`
 background: #4747EB;
-border-radius: 4px 0px 0px 4px;
+border-radius: 4px;
 height:100%;
 width:${props =>{return props.value+'%' }}
 `
