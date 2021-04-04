@@ -6,6 +6,7 @@ import { COLORS } from '../../constants';
 import VisuallyHidden from '../VisuallyHidden';
 
 const ProgressBarContainer=styled.div`
+overflow:hidden;
 width:370px;
 box-shadow: inset 0px 2px 4px rgba(128, 128, 128, 0.35);
 background: rgba(128, 128, 128, 0.15);
@@ -32,7 +33,7 @@ height:${props =>{
 
 const Progress=styled.div`
 background: #4747EB;
-border-radius: 4px;
+border-radius:  4px 0px 0px 4px;
 height:100%;
 width:${props =>{return props.value+'%' }}
 `
